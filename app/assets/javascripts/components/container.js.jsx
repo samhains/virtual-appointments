@@ -10,7 +10,7 @@ var AppointmentContainer = React.createClass({
         type: 'POST',
         data: {user_id: this.props.user_id, appointment_id: appointment_id},
         success: function(data){
-          self.setState({appointments: data});
+          self.setState({appointments: data, index: index});
         }
       });
     }
@@ -18,14 +18,17 @@ var AppointmentContainer = React.createClass({
 
   },
   getInitialState: function(){
-    return { appointments: this.props.appointments };
+    return { appointments: this.props.appointments,
+             index: this.props.index};
   },
   render: function() {
     return (
-      <div >
+      <div className='appointment-container'>
+        <div className='appointment-header'> Make an appointment </div>
         <Appointments
           appointments={ this.state.appointments }
-          joinAppointment= { this.joinAppointment }/>
+          joinAppointment= { this.joinAppointment }
+          index={ this.state.index }/>
       </div>
     );
   }

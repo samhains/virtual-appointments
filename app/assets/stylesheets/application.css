@@ -13,3 +13,114 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin:0px;
+}
+
+.selected-apt{
+  background-color: #BFE1BF!important;
+}
+.appointment-btn{
+  background-color:white;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin-top:-2px;
+  border-radius: 1px;
+  letter-spacing: 0.8px;
+}
+.appointment-btn:hover{
+  background-color: #F1F1F1;
+}
+
+.form-input{
+   width: 270px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  padding: 5px;
+  padding-left: 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.form-label{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.form-modal{
+  position: absolute;
+  left: 100px;
+  width: 444px;
+  padding-left: 75px;
+  padding-bottom: 85px;
+  padding-top: 40px;
+  padding-right: 75px;
+  top: 120px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 5px;
+}
+
+.appointment-date{
+  padding-top:15px;
+  padding-bottom:15px;
+  text-align: center;
+}
+
+.appointment-sub{
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.appointment-header{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#new_user{
+  padding-left: 38px;
+      padding-top: 20px;
+}
+.submit-btn{
+  display:none;
+}
+.details-btn{
+  border-radius: 0;
+  border: 1px outset white;
+  background-color: white;
+  letter-spacing: 1.5px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+}
+.appointment-container{
+    text-align: center;
+    position: absolute;
+    left: 100px;
+    width: 444px;
+    padding-left: 75px;
+    padding-bottom: 85px;
+    padding-top: 40px;
+    padding-right: 75px;
+    top: 120px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 5px;
+}
+
+.stars-bg{
+  position:absolute;
+  width: 800px;
+  height: 608px;
+  z-index: -1;
+}

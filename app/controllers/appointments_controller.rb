@@ -3,5 +3,6 @@ class AppointmentsController < ApplicationController
 
   def index
     @appointments = Appointment.all
+    @index = Appointment.all.find_index(current_user.appointment)
   end
 end
