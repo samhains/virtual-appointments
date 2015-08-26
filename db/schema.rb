@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150823053852) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "appointments", force: true do |t|
     t.datetime "date"
     t.integer  "capacity"
@@ -21,7 +24,12 @@ ActiveRecord::Schema.define(version: 20150823053852) do
     t.integer  "duration"
   end
 
-# Could not dump table "users" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "users", force: true do |t|
+    t.string  "name"
+    t.string  "email"
+    t.integer "appointment_id"
+  end
+
+  add_index "users", ["appointment_id"], name: "index_users_on_appointment_id", using: :btree
 
 end
