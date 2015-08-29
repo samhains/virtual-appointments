@@ -12,11 +12,11 @@ class RelationshipsController < ApplicationController
     @user.appointment.increment(:attending, 1)
     @user.appointment.save
     @user.save
-    render json: Appointment.all
+    render json: Appointment.all.order('date')
   end
 
   def approved
-    @appointments = Appointment.where(:date => (Time.now - 1.hour)..(Time.now+1.hour))
+    @appointments = Appointment.where(:date => (Time.now - 1.hour)..(Time.now+1.hour)).order('date')
     emails = @appointments.map { |appointment| appointment.users.map(&:email) }.flatten
     emails << 'sdh@eml.cc'
     emails << 'freedmancharlie@gmail.com'

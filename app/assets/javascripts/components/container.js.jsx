@@ -9,6 +9,9 @@ var AppointmentContainer = React.createClass({
         url: '/relationships',
         type: 'POST',
         data: {user_id: this.props.user_id, appointment_id: appointment_id},
+        error: function(data){
+           console.log(data)
+        },
         success: function(data){
           self.setState({appointments: data, index: index});
         }
