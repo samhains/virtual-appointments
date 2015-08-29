@@ -5,6 +5,7 @@ var AppointmentContainer = React.createClass({
     var appointment_id = selected.id;
     var self = this;
     if (selected.attending< selected.capacity){
+
       $.ajax({
         url: '/relationships',
         type: 'POST',

@@ -7,9 +7,36 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%=image_tag('stars.png', class: 'stars-bg')%>
+  <div class='stars-bg' id='stars'> </div>
 
 <%= yield %>
 
 </body>
+<script>
+  var welcomeScroll = function(speed){
+
+  var scrollSpeed = 70;
+
+  // set the default position
+  var current = 0;
+
+  // set the direction
+  var direction = 'h';
+
+  function bgscroll(){
+
+      // 2 pixel row at a time
+      current -= speed;
+
+      console.log('yes')
+      // move the background with backgrond-position css properties
+      $('#stars').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
+
+  }
+
+  //Calls the scrolling function repeatedly
+   bgScrollTimer = setInterval(bgscroll, scrollSpeed);
+  };
+  welcomeScroll(1);
+</script>
 </html>

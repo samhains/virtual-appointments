@@ -33,6 +33,7 @@ body {
   background-color: #F1F1F1;
 }
 
+
 .form-input{
    width: 270px;
   margin-top: 10px;
@@ -119,6 +120,8 @@ body {
 }
 
 .stars-bg{
+  background-image: url('stars.png');
+  background-attachment: fixed;
   position:absolute;
   width: 800px;
   height: 608px;
