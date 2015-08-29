@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 17, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+body {
+  margin: 0px;
+}
+
+/* line 21, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.selected-apt {
+  background-color: #bfe1bf !important;
+}
+
+/* line 24, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.appointment-btn {
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: -2px;
+  border-radius: 1px;
+  letter-spacing: 0.8px;
+}
+
+/* line 33, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.appointment-btn:hover {
+  background-color: #F1F1F1;
+}
+
+/* line 38, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.form-input {
+  width: 270px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  padding: 5px;
+  padding-left: 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* line 47, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.form-label {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* line 52, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.form-modal {
+  position: absolute;
+  left: 100px;
+  width: 444px;
+  padding-left: 75px;
+  padding-bottom: 85px;
+  padding-top: 40px;
+  padding-right: 75px;
+  top: 120px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 5px;
+}
+
+/* line 68, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.appointment-date {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* line 74, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.appointment-sub {
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* line 80, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.appointment-header {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 87, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+#new_user {
+  padding-left: 38px;
+  padding-top: 20px;
+}
+
+/* line 91, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.submit-btn {
+  display: none;
+}
+
+/* line 94, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.details-btn {
+  border-radius: 0;
+  border: 1px outset white;
+  background-color: white;
+  letter-spacing: 1.5px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 106, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.appointment-container {
+  text-align: center;
+  position: absolute;
+  left: 100px;
+  width: 444px;
+  padding-left: 75px;
+  padding-bottom: 85px;
+  padding-top: 40px;
+  padding-right: 75px;
+  top: 120px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 5px;
+}
+
+/* line 123, /Users/zazou/Code/virtual-appointments/app/assets/stylesheets/application.scss */
+.stars-bg {
+  background-image: url(/assets/stars.png);
+  background-attachment: fixed;
+  position: absolute;
+  width: 800px;
+  height: 608px;
+  z-index: -1;
+}
