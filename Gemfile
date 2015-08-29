@@ -16,6 +16,7 @@ gem 'pry'
 # gem 'therubyracer',  platforms: :rubyml-rails'
 
 # Use jquery as the JavaScript library
+gem 'rails_12factor', group: :production
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
