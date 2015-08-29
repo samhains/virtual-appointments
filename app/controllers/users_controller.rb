@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :require_user, only: [:destroy]
   def new
-    redirect_to appointments_path if logged_in?
+    redirect_to root_path if logged_in?
     @user = User.new
   end
 
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.new(params.require(:user).permit(:name, :email))
     if @user.save
       session[:user_id] = @user.id
-      redirect_to appointments_path
+      redirect_to root_path
     else
       render 'new'
     end
@@ -17,6 +17,6 @@ class UsersController < ApplicationController
 
   def destroy
     log_out
-    redirect_to appointments_path
+    redirect_to register_path
   end
 end

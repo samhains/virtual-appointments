@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'appointments#index'
+  get 'register', to: 'users#new'
   resources :users, only: [:new, :create, :destroy]
   resources :appointments, only: [:edit, :update, :index, :destroy]
   post 'relationships', to: 'relationships#create'
@@ -9,9 +10,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
+  # root 'welcome#index' # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
