@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VirtualAppointments</title>
+  <title>2022 appointments</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -28,7 +28,6 @@
       // 2 pixel row at a time
       current -= speed;
 
-      console.log('yes')
       // move the background with backgrond-position css properties
       $('#stars').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
 

@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
   end
 
   def access_denied
-    redirect_to root_path
+    redirect_to new_user_path
   end
 
 

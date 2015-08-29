@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  root 'users#new'
+  root 'appointments#index'
   resources :users, only: [:new, :create, :destroy]
   resources :appointments, only: [:edit, :update, :index, :destroy]
   post 'relationships', to: 'relationships#create'
   get 'approved-users', to: 'relationships#approved'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

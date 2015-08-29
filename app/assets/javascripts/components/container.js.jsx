@@ -18,10 +18,10 @@ var AppointmentContainer = React.createClass({
         }
       });
     }
-    this.setState({appointments: appointments});
 
   },
   getInitialState: function(){
+    console.log('inital index', this.props.index)
     return { appointments: this.props.appointments,
              index: this.props.index};
   },
