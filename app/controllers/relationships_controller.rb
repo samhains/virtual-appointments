@@ -20,6 +20,7 @@ class RelationshipsController < ApplicationController
     emails = @appointments.map { |appointment| appointment.users.map(&:email) }.flatten
     emails << 'sdh@eml.cc'
     emails << 'freedmancharlie@gmail.com'
+    emails << 'hrrhughes@gmail.com'
     render json: {emails: emails.map(&:downcase)}
   end
 end
