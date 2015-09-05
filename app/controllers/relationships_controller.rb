@@ -3,7 +3,7 @@ class RelationshipsController < ApplicationController
   def create
     @appointment = Appointment.find(params[:appointment_id])
     @user = current_user
-    return render json: Appointment.all if  @user.appointment == @appointment
+    return render json: Appointment.all.order('date') if  @user.appointment == @appointment
     if @user.appointment
       @user.appointment.decrement(:attending, 1)
       @user.appointment.save

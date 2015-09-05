@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   def queue_reminder
     cancel_reminder if reminder_job_id
     appointment_time = appointment.date
-    self.reminder_job_id = AppMailer.delay_until(5.seconds.from_now).send_reminder_mail(self, appointment)
+    self.reminder_job_id = AppMailer.delay_until(appointment_time-1.hour).send_reminder_mail(self, appointment)
   end
 
   def cancel_reminder

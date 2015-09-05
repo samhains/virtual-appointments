@@ -7,6 +7,6 @@ class AppMailer < ActionMailer::Base
   def send_reminder_mail(user, appointment)
     @user = user
     @appointment = appointment
-    mail to: user.email, from: "info@2002.gallery", subject: "2022.gallery : appointment reminder"
+    mail to: user.email, from: "info@2002.gallery", subject: "2022.gallery: appointment reminder"
   end
 end
