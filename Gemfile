@@ -34,6 +34,8 @@ gem 'letter_opener', group: :development
 gem 'sidekiq'
 gem 'sidekiq-status'
 # Use ActiveModel has_secure_password
+gem 'puma'
+
 # gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
