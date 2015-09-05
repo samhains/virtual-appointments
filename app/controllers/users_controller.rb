@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params.require(:user).permit(:name, :email))
     if @user.save
+      AppMailer.send_welcome_mail(@user).deliver
       session[:user_id] = @user.id
       redirect_to root_path
     else

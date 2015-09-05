@@ -9,6 +9,7 @@ class RelationshipsController < ApplicationController
       @user.appointment.save
     end
     @user.appointment = @appointment.reload
+    @user.queue_reminder
     @user.appointment.increment(:attending, 1)
     @user.appointment.save
     @user.save
